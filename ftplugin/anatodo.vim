@@ -19,3 +19,22 @@ endfunction
 
 setlocal foldmethod=expr
 setlocal foldexpr=AnaFold(v:lnum)
+
+"""""""""""""""""""""
+" Highlighting
+"""""""""""""""""""""
+
+"function! AnaHighlight()
+"
+"	" I want to recurse through fold tree and look for fully 'complete' and/or
+"	" 'abandoned' tasks. When all the children of a parent node satisfy this, I
+"	" want to set a highlight on the parent node
+"
+"	let lineNum = 1
+"	let stringlol = '1'
+"	while lineNum <= line('$')
+"		let lineNum += 1	
+"		let stringlol = stringlol . " hmm"
+"	endwhile
+"	echo stringlol
+"endfunction

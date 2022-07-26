@@ -19,6 +19,11 @@ function! GetATDIndent(lnum)
 		let indt = indent(plnum)
 	endif
 
+	" Disabling adding an extra line of indent by just...overwriting the
+	" variable here. Instead, have the indent always match the indent of the
+	" previous line
+	let indt = indent(plnum)
+
 	echo indt
 	return indt
 
