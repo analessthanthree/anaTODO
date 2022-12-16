@@ -1,8 +1,8 @@
 setlocal autoindent
 
 " Create the following line at the top of the file:
-" ### DATE: Day date month year time am/pm timezone
-nnoremap <localleader>d ggO<esc>!ldate<cr>I%%% DATE: <esc>o<cr><esc>k
+" %%% DATE: yyyy-mm-dd # Day of week
+nnoremap <localleader>d ggO<esc>!ldate +"\%\%\% DATE: \%F \# \%A"<cr>o<cr><esc>k
 
 """""""""""""""""""""
 " Folding
