@@ -2,7 +2,7 @@ setlocal autoindent
 
 " Create the following line at the top of the file:
 " %%% DATE: yyyy-mm-dd # Day of week
-nnoremap <localleader>d ggO<esc>!ldate +"\%\%\% DATE: \%F \# \%A"<cr>o<cr><esc>k
+nnoremap <localleader>d ggO<esc>!ldate +"\%F \# \%A"<cr>I%%% DATE: <esc>o<cr><esc>k
 
 """""""""""""""""""""
 " Folding
